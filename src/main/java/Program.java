@@ -3,7 +3,7 @@ import java.util.Scanner;
   
 public class Program { 
   
-    public static void main(String[] args) {
+    public static void startTheMainMenu() {
         
         System.out.println("Enter one of the following commands: ");
         System.out.println("1 - Open the list of files");
@@ -24,7 +24,7 @@ public class Program {
                 
             switch(choiceentry) {
                 case 1:
-                    TheListOfFiles.theListOfFiles();
+                    TheListOfFiles.showListOfFiles();
                     break;
                 case 2:
                     System.out.println("Here are the formats you may choose from: ");
@@ -38,4 +38,8 @@ public class Program {
             }
         } 
     }
+
+    public static void main(String[] args) {
+        Program.startTheMainMenu();
+    } 
 } 
