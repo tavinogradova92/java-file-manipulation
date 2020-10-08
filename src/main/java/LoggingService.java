@@ -1,4 +1,4 @@
-package main.java.services;
+package main.java;
 
 public class LoggingService {
     

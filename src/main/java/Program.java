@@ -8,7 +8,7 @@ public class Program {
         System.out.println("Enter one of the following commands: ");
         System.out.println("1 - Open the list of files");
         System.out.println("2 - Choose files by their extensions");
-        System.out.println("3 - Play with some Drakula staff");
+        System.out.println("3 - Play with some Dracula staff");
         System.out.println("4 - Exit the program");
         Scanner scanchoice = new Scanner(System.in);
         System.out.println();
@@ -22,27 +22,20 @@ public class Program {
                 choiceentry = scanchoice.nextInt();
             }
                 
-    
             switch(choiceentry) {
                 case 1:
-                    System.out.println("Here are all the files: ");
+                    TheListOfFiles.theListOfFiles();
                     break;
                 case 2:
                     System.out.println("Here are the formats you may choose from: ");
                     break;
                 case 3:
-                    System.out.println("Here is what you can do with Drakula: ");
+                    System.out.println("Here is what you can do with Dracula: ");
                     break;
                 case 4:
                     System.out.println("You have just quit the program. I am sorry to see you go.");
                     break;
             }
-    
         } 
-
-
     }
-    
-    
-
 } 
