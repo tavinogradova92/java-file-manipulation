@@ -114,21 +114,28 @@ public abstract class TheListOfExtensions {
             }
         
             
-            // The return to the main function    
+            // The return to the main function
             System.out.println();
-            int choiceentry2 = -1;
+            int choiceentry3 = -1;
             System.out.println("Enter 5 to return to the main menu.");
-            Scanner scanchoice2 = new Scanner(System.in);
+            Scanner scanchoice1 = new Scanner(System.in);
 
-            if (scanchoice2.hasNextInt()) {
-                choiceentry2 = scanchoice2.nextInt();
+            if (scanchoice.hasNextInt()) {
+                choiceentry3 = scanchoice1.nextInt();
             }
 
-            if (choiceentry2 == 5) {
-                Program.startTheMainMenu();
-            } else {
+            while (choiceentry != 5) {
                 System.out.println("Incorrect number. Please try again.");
+                Scanner scanchoice4 = new Scanner(System.in);
+
+                if (scanchoice.hasNextInt()) {
+                    choiceentry = scanchoice4.nextInt();
+                }
             }
+            
+            if (choiceentry == 5) {
+                Program.startTheMainMenu();
+            } 
 
         }    
     }

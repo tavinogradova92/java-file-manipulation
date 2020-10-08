@@ -29,11 +29,18 @@ public abstract class TheListOfFiles {
                 choiceentry = scanchoice.nextInt();
             }
 
+            while (choiceentry != 5) {
+                System.out.println("Incorrect number. Please try again.");
+                Scanner scanchoice2 = new Scanner(System.in);
+
+                if (scanchoice.hasNextInt()) {
+                    choiceentry = scanchoice2.nextInt();
+                }
+            }
+            
             if (choiceentry == 5) {
                 Program.startTheMainMenu();
-            } else {
-                System.out.println("Incorrect number. Please try again.");
-            }
+            } 
 
             
     }
