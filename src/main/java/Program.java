@@ -27,7 +27,7 @@ public class Program {
                     TheListOfFiles.showListOfFiles();
                     break;
                 case 2:
-                    System.out.println("Here are the formats you may choose from: ");
+                    TheListOfExtensions.showListOfExtensions();
                     break;
                 case 3:
                     System.out.println("Here is what you can do with Dracula: ");

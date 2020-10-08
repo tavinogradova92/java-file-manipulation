@@ -17,7 +17,9 @@ public abstract class TheListOfFiles {
             for(int i = 0; i < contents.length; i++) {
                 System.out.println(contents[i]);
             }
-
+            
+            
+            // The return to the main function
             System.out.println();
             int choiceentry = -1;
             System.out.println("Enter 5 to return to the main menu.");
