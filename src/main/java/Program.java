@@ -33,6 +33,7 @@ public class Program {
                     case 3:
                         TextManipulation.showTextProperties();
                         TextManipulation.countTheLines();
+                        TextManipulation.countOccurences();
                         TextManipulation.returnToTheMainMenu();
                         break;
                     case 4:

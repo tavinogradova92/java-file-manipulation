@@ -1,7 +1,10 @@
 package main.java;
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.io.FileInputStream;
 import java.util.Scanner;
+import java.io.IOException;
 
 public abstract class TextManipulation {
     
@@ -16,11 +19,11 @@ public abstract class TextManipulation {
 
         // Logging file's name and size
         System.out.println("Name: " + textPath.getName());
-        System.out.println("Size: " + textPath.length());
+        System.out.println("Size: " + textPath.length() + " bytes");
         
     }
 
-    public static void countTheLines(){
+    public static void countTheLines() {
    
         // Counting the number of lines
         try {
@@ -38,6 +41,41 @@ public abstract class TextManipulation {
         }
         
     }
+
+    static int countOccurences(String str, String word) {
+
+        // split the string by spaces in a 
+        String a[] = str.toLowerCase().split(" "); 
+  
+        // search for pattern in a 
+        int count = 0; 
+        for (int i = 0; i < a.length; i++) { 
+            // if match found increase count 
+            if (word.equals(a[i])) 
+                count++; 
+        } 
+        return count;
+    }
+
+    public static void countOccurences() {
+        
+        try {
+            System.out.println("Search if the word of your choice exists in the file.");
+            System.out.println("Enter the word you'd like to search for:");
+    
+            Scanner scanWord = new Scanner(System.in);
+            if (scanWord.hasNext()) {
+                String word = scanWord.next().toLowerCase();
+                String path = "./src/main/resources/Dracula.txt";
+                String str = Files.readString(Paths.get(path));
+                System.out.println("The word \"" + word + "\" appears in Dracula " + countOccurences(str, word) + " times.");
+            }   
+        } catch (IOException err) {
+            err.printStackTrace();
+        }
+        
+    }
+
 
     public static void returnToTheMainMenu() {
 
