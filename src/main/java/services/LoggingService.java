@@ -1,4 +1,5 @@
-package main.java;
+package main.java.services;
+import main.java.*;
 import java.util.logging.Logger;
 import java.util.logging.FileHandler;
 import java.lang.SecurityException;

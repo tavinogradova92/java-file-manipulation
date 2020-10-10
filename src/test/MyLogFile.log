@@ -12,3 +12,5 @@ Oct 10, 2020 7:54:16 PM main.java.LoggingService executeLogging
 INFO: 10/10/2020 19:54:16 Number of lines in the file are: 15973 The function took 142 ms to execute.
 Oct 10, 2020 7:54:20 PM main.java.LoggingService executeLogging
 INFO: 10/10/2020 19:54:20 The word "hi" appears in Dracula 0 times. The function took 3863 ms to execute.
+Oct 10, 2020 8:05:55 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 20:05:55 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, The function took 10 ms to execute.
