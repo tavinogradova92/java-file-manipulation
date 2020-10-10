@@ -41,10 +41,12 @@ public class Program {
                         break;
                 }
             }
+
         
     }
 
     public static void main(String[] args) {
         Program.startTheMainMenu();
+        LoggingService.executeLogging();
     } 
 } 
