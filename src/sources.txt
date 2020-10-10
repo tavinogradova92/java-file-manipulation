@@ -1,0 +1,5 @@
+./main/java/Program.java
+./main/java/services/LoggingService.java
+./main/java/services/TextManipulation.java
+./main/java/services/TheListOfExtensions.java
+./main/java/services/TheListOfFiles.java

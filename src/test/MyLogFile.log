@@ -14,3 +14,19 @@ Oct 10, 2020 7:54:20 PM main.java.LoggingService executeLogging
 INFO: 10/10/2020 19:54:20 The word "hi" appears in Dracula 0 times. The function took 3863 ms to execute.
 Oct 10, 2020 8:05:55 PM main.java.services.LoggingService executeLogging
 INFO: 10/10/2020 20:05:55 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, The function took 10 ms to execute.
+Oct 10, 2020 8:43:38 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 20:43:38 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, Screenshot1.jpg, Screenshot2.jpg, The function took 21 ms to execute.
+Oct 10, 2020 8:45:54 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 20:45:54 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, Screenshot1.jpg, Screenshot2.jpg, The function took 28 ms to execute.
+Oct 10, 2020 8:46:12 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 20:46:12 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, Screenshot1.jpg, Screenshot2.jpg, The function took 26 ms to execute.
+Oct 10, 2020 9:19:15 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 21:19:15 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, Screenshot1.jpg, Screenshot2.jpg, The function took 29 ms to execute.
+Oct 10, 2020 9:19:19 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 21:19:19 The name of the file is Dracula.txt The function took 0 ms to execute.
+Oct 10, 2020 9:19:19 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 21:19:19 The size of the file is 883160 bytes. The function took 3 ms to execute.
+Oct 10, 2020 9:19:19 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 21:19:19 Number of lines in the file are: 15973 The function took 117 ms to execute.
+Oct 10, 2020 9:19:24 PM main.java.services.LoggingService executeLogging
+INFO: 10/10/2020 21:19:24 The word "hello" appears in Dracula 0 times. The function took 4167 ms to execute.
