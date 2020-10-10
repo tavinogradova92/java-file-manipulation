@@ -31,7 +31,8 @@ public class Program {
                         TheListOfExtensions.showListOfExtensions();
                         break;
                     case 3:
-                        TextManipulation.showTextProperties();
+                        TextManipulation.showTextName();
+                        TextManipulation.showTextSize();
                         TextManipulation.countTheLines();
                         TextManipulation.countOccurences();
                         TextManipulation.returnToTheMainMenu();
@@ -47,6 +48,5 @@ public class Program {
 
     public static void main(String[] args) {
         Program.startTheMainMenu();
-        LoggingService.executeLogging();
     } 
 } 

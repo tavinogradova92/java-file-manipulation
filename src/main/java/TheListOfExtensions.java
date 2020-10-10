@@ -32,6 +32,8 @@ public abstract class TheListOfExtensions {
                 
                 switch(choiceentry) {
                     case 1:
+                        long startTime = System.nanoTime();
+
                         FilenameFilter textFilefilter = new FilenameFilter() {
                             public boolean accept(File dir, String name) {
                                 String lowercaseName = name.toLowerCase();
@@ -48,11 +50,23 @@ public abstract class TheListOfExtensions {
                         System.out.println("List of the text files: ");
                         for(String textFileName : filesList) {
                             System.out.println(textFileName);
+                            
+                            // Logging Service for the count of txt files
+                            LoggingService.executeLogging(textFileName);
                         }
+                        long endTime = System.nanoTime();
+
+                        // get difference of two nanoTime values
+                        long executionTime = (endTime - startTime) / 1000000;
+
+                        LoggingService.executeLogging(" The function took "
+                                                        + executionTime
+                                                        + " ms to execute.");
                             break;
 
                     case 2:
-
+                        long startTime2 = System.nanoTime();
+                        
                         FilenameFilter jpegFilefilter = new FilenameFilter() {
                             public boolean accept(File dir, String name) {
                                 String lowercaseName = name.toLowerCase();
@@ -70,10 +84,23 @@ public abstract class TheListOfExtensions {
                         System.out.println("List of the jpeg files: ");
                         for(String jpegFileName : jpegFilesList) {
                             System.out.println(jpegFileName);
+
+                            // Logging Service for the count of jpg files
+                            LoggingService.executeLogging(jpegFileName);
                         }
+                        long endTime2 = System.nanoTime();
+
+                        // get difference of two nanoTime values
+                        long executionTime2 = (endTime2 - startTime2) / 1000000;
+
+                        LoggingService.executeLogging(" The function took "
+                                                        + executionTime2
+                                                        + " ms to execute.");
                             break;
                         
                     case 3:
+                        long startTime3 = System.nanoTime();
+
                         FilenameFilter pngFilefilter = new FilenameFilter() {
                             public boolean accept(File dir, String name) {
                                 String lowercaseName = name.toLowerCase();
@@ -90,9 +117,22 @@ public abstract class TheListOfExtensions {
                         System.out.println("List of the png files: ");
                         for(String pngFileName : pngFilesList) {
                             System.out.println(pngFileName);
+
+                            // Logging Service for the count of png files
+                            LoggingService.executeLogging(pngFileName);
                         }
+                        long endTime3 = System.nanoTime();
+
+                        // get difference of two nanoTime values
+                        long executionTime3 = (endTime3 - startTime3) / 1000000;
+
+                        LoggingService.executeLogging(" The function took "
+                                                        + executionTime3
+                                                        + " ms to execute.");
                             break;
                     case 4:
+                        long startTime4 = System.nanoTime();
+
                         FilenameFilter jfifFilefilter = new FilenameFilter() {
                             public boolean accept(File dir, String name) {
                                 String lowercaseName = name.toLowerCase();
@@ -109,7 +149,18 @@ public abstract class TheListOfExtensions {
                         System.out.println("List of the jfif files: ");
                         for(String jfifFileName : jfifFilesList) {
                             System.out.println(jfifFileName);
+
+                            // Logging Service for the count of jfif files
+                            LoggingService.executeLogging(jfifFileName);
                         }
+                        long endTime4 = System.nanoTime();
+
+                        // get difference of two nanoTime values
+                        long executionTime4 = (endTime4 - startTime4) / 1000000;
+
+                        LoggingService.executeLogging(" The function took "
+                                                        + executionTime4
+                                                        + " ms to execute.");
                             break;
             }
         

@@ -5,6 +5,8 @@ import java.util.Scanner;
 public abstract class TheListOfFiles {
     
     public static void showListOfFiles() {
+
+            long startTime = System.nanoTime();
           
             //Creating a File object for directory
             File directoryPath = new File("./src/main/resources");
@@ -16,7 +18,19 @@ public abstract class TheListOfFiles {
 
             for(int i = 0; i < contents.length; i++) {
                 System.out.println(contents[i]);
+
+                // Logging Service for the count 
+                LoggingService.executeLogging(contents[i]);
             }
+
+            long endTime = System.nanoTime();
+
+            // get difference of two nanoTime values
+            long executionTime = (endTime - startTime) / 1000000;
+
+            LoggingService.executeLogging(" The function took "
+                                            + executionTime
+                                            + " ms to execute.");
             
             
             // The return to the main function

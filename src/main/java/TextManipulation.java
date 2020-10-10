@@ -8,25 +8,62 @@ import java.io.IOException;
 
 public abstract class TextManipulation {
     
-    public static void showTextProperties() {
+    public static void showTextName() {
 
         System.out.println("");
         System.out.println("The information about the Dracula novel: ");
         System.out.println("");
 
+        long startTime = System.nanoTime();
+
         //Creating a File object for the text
         File textPath = new File("./src/main/resources/Dracula.txt");
 
-        // Logging file's name and size
-        System.out.println("Name: " + textPath.getName());
-        System.out.println("Size: " + textPath.length() + " bytes");
+        // Showing file's name
         
+        System.out.println("Name: " + textPath.getName());
+
+        long endTime = System.nanoTime();
+
+        // get difference of two nanoTime values
+        long executionTime = (endTime - startTime) / 1000000;
+        
+        // Logging Service for the file name
+        LoggingService.executeLogging("The name of the file is " 
+                                    + textPath.getName()
+                                    + " The function took "
+                                    + executionTime
+                                    + " ms to execute.");
+    }
+
+    public static void showTextSize() {
+        long startTime = System.nanoTime();
+
+        // Showing file's size
+        File textPath = new File("./src/main/resources/Dracula.txt");
+        System.out.println("Size: " + textPath.length() + " bytes");
+
+        long endTime = System.nanoTime();
+
+        // get difference of two nanoTime values
+        long executionTime = (endTime - startTime) / 1000000;
+
+        // Logging Service for the file size
+        String sizeOfFile = String.valueOf(textPath.length());
+        LoggingService.executeLogging("The size of the file is " 
+                                    + sizeOfFile 
+                                    + " bytes."
+                                    + " The function took "
+                                    + executionTime
+                                    + " ms to execute.");
     }
 
     public static void countTheLines() {
    
         // Counting the number of lines
         try {
+            long startTime = System.nanoTime();
+
             File textPath = new File("./src/main/resources/Dracula.txt");
             FileInputStream fis = new FileInputStream(textPath);
             byte[] byteArray = new byte[(int)textPath.length()];
@@ -34,6 +71,19 @@ public abstract class TextManipulation {
             String data = new String(byteArray);
             String[] stringArray = data.split("\r\n");
             System.out.println("Number of lines in the file are: " + stringArray.length);
+
+            long endTime = System.nanoTime();
+
+            // get difference of two nanoTime values
+            long executionTime = (endTime - startTime) / 1000000;
+
+            // Logging Service for the count of lines
+            String countOfLines = String.valueOf(stringArray.length);
+            LoggingService.executeLogging("Number of lines in the file are: " 
+                                    + countOfLines 
+                                    + " The function took "
+                                    + executionTime
+                                    + " ms to execute.");
         }
 
         catch(Exception err) {
@@ -44,7 +94,7 @@ public abstract class TextManipulation {
 
     static int countOccurences(String str, String word) {
 
-        // split the string by spaces in a 
+        // split the string by spaces
         String a[] = str.toLowerCase().split(" "); 
   
         // search for pattern in a 
@@ -60,6 +110,8 @@ public abstract class TextManipulation {
     public static void countOccurences() {
         
         try {
+            long startTime = System.nanoTime();
+
             System.out.println("Search if the word of your choice exists in the file.");
             System.out.println("Enter the word you'd like to search for:");
     
@@ -69,6 +121,22 @@ public abstract class TextManipulation {
                 String path = "./src/main/resources/Dracula.txt";
                 String str = Files.readString(Paths.get(path));
                 System.out.println("The word \"" + word + "\" appears in Dracula " + countOccurences(str, word) + " times.");
+
+                long endTime = System.nanoTime();
+
+                // get difference of two nanoTime values
+                long executionTime = (endTime - startTime) / 1000000;
+
+                // Logging Service for the count of lines
+                String countOfOccurencies = String.valueOf(countOccurences(str, word));
+                LoggingService.executeLogging("The word \"" 
+                                    + word
+                                    + "\" appears in Dracula "
+                                    + countOfOccurencies
+                                    + " times." 
+                                    + " The function took "
+                                    + executionTime
+                                    + " ms to execute.");
             }   
         } catch (IOException err) {
             err.printStackTrace();

@@ -1,106 +1,52 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2020-10-10T12:18:11.578344200Z</date>
-  <millis>1602332291578</millis>
-  <nanos>344200</nanos>
-  <sequence>0</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-</log>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2020-10-10T12:19:58.359426400Z</date>
-  <millis>1602332398359</millis>
-  <nanos>426400</nanos>
-  <sequence>0</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-<record>
-  <date>2020-10-10T12:19:58.437589100Z</date>
-  <millis>1602332398437</millis>
-  <nanos>589100</nanos>
-  <sequence>1</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-</log>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2020-10-10T12:20:32.602802300Z</date>
-  <millis>1602332432602</millis>
-  <nanos>802300</nanos>
-  <sequence>0</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-<record>
-  <date>2020-10-10T12:20:32.677283100Z</date>
-  <millis>1602332432677</millis>
-  <nanos>283100</nanos>
-  <sequence>1</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-</log>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2020-10-10T12:21:06.576823600Z</date>
-  <millis>1602332466576</millis>
-  <nanos>823600</nanos>
-  <sequence>0</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-</log>
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE log SYSTEM "logger.dtd">
-<log>
-<record>
-  <date>2020-10-10T12:22:35.471049700Z</date>
-  <millis>1602332555471</millis>
-  <nanos>49700</nanos>
-  <sequence>0</sequence>
-  <logger>MyLog</logger>
-  <level>INFO</level>
-  <class>main.java.LoggingService</class>
-  <method>executeLogging</method>
-  <thread>1</thread>
-  <message>My first log</message>
-</record>
-</log>
-Oct 10, 2020 2:26:53 PM main.java.LoggingService executeLogging
-INFO: My first log
+Oct 10, 2020 4:58:05 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:05 Dracula.txt
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_1.jpeg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_10.jfif
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_11.jfif
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_2.png
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_3.jpg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_4.jpg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_5.jpg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_6.jpg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_7.jpg
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_8.jfif
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06 Meme_9.jfif
+Oct 10, 2020 4:58:06 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 16:58:06  The function took 476 ms to execute.
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Dracula.txt
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_1.jpeg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_10.jfif
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_11.jfif
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_2.png
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_3.jpg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_4.jpg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_5.jpg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_6.jpg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_7.jpg
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_8.jfif
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01 Meme_9.jfif
+Oct 10, 2020 5:03:01 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 17:03:01  The function took 494 ms to execute.
