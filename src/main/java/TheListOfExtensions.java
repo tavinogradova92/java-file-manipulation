@@ -48,20 +48,24 @@ public abstract class TheListOfExtensions {
                         //List of all the text files
                         String filesList[] = directoryPath.list(textFilefilter);
                         System.out.println("List of the text files: ");
+
+                        StringBuilder textFileString = new StringBuilder();
+
                         for(String textFileName : filesList) {
+                            textFileString.append(textFileName + ", ");
                             System.out.println(textFileName);
-                            
-                            // Logging Service for the count of txt files
-                            LoggingService.executeLogging(textFileName);
                         }
                         long endTime = System.nanoTime();
 
                         // get difference of two nanoTime values
                         long executionTime = (endTime - startTime) / 1000000;
 
-                        LoggingService.executeLogging(" The function took "
-                                                        + executionTime
-                                                        + " ms to execute.");
+                        // logging for the list of txt files
+                        LoggingService.executeLogging("The list of txt files is: "
+                                                    + textFileString
+                                                    + "The function took "
+                                                    + executionTime
+                                                    + " ms to execute.");
                             break;
 
                     case 2:
@@ -82,20 +86,25 @@ public abstract class TheListOfExtensions {
                         //List of all the text files
                         String jpegFilesList[] = directoryPath.list(jpegFilefilter);
                         System.out.println("List of the jpeg files: ");
-                        for(String jpegFileName : jpegFilesList) {
-                            System.out.println(jpegFileName);
 
-                            // Logging Service for the count of jpg files
-                            LoggingService.executeLogging(jpegFileName);
+                        StringBuilder jpegFileString = new StringBuilder();
+
+                        for(String jpegFileName : jpegFilesList) {
+                            jpegFileString.append(jpegFileName + ", ");
+                            System.out.println(jpegFileName);
                         }
+
                         long endTime2 = System.nanoTime();
 
                         // get difference of two nanoTime values
                         long executionTime2 = (endTime2 - startTime2) / 1000000;
 
-                        LoggingService.executeLogging(" The function took "
-                                                        + executionTime2
-                                                        + " ms to execute.");
+                        // logging for the list of jpeg files
+                        LoggingService.executeLogging("The list of jpeg files is: "
+                                                    + jpegFileString
+                                                    + " The function took "
+                                                    + executionTime2
+                                                    + " ms to execute.");
                             break;
                         
                     case 3:
@@ -115,20 +124,25 @@ public abstract class TheListOfExtensions {
                         //List of all the text files
                         String pngFilesList[] = directoryPath.list(pngFilefilter);
                         System.out.println("List of the png files: ");
-                        for(String pngFileName : pngFilesList) {
-                            System.out.println(pngFileName);
 
-                            // Logging Service for the count of png files
-                            LoggingService.executeLogging(pngFileName);
+                        StringBuilder pngFileString = new StringBuilder();
+
+                        for(String pngFileName : pngFilesList) {
+                            pngFileString.append(pngFileName + ", ");
+                            System.out.println(pngFileName);
                         }
+
                         long endTime3 = System.nanoTime();
 
                         // get difference of two nanoTime values
                         long executionTime3 = (endTime3 - startTime3) / 1000000;
 
-                        LoggingService.executeLogging(" The function took "
-                                                        + executionTime3
-                                                        + " ms to execute.");
+                        // logging for the list of png files
+                        LoggingService.executeLogging("The list of png files is: "
+                                                    + pngFileString
+                                                    + " The function took "
+                                                    + executionTime3
+                                                    + " ms to execute.");
                             break;
                     case 4:
                         long startTime4 = System.nanoTime();
@@ -147,20 +161,25 @@ public abstract class TheListOfExtensions {
                         //List of all the text files
                         String jfifFilesList[] = directoryPath.list(jfifFilefilter);
                         System.out.println("List of the jfif files: ");
-                        for(String jfifFileName : jfifFilesList) {
-                            System.out.println(jfifFileName);
 
-                            // Logging Service for the count of jfif files
-                            LoggingService.executeLogging(jfifFileName);
+                        StringBuilder jfifFileString = new StringBuilder();
+
+                        for(String jfifFileName : jfifFilesList) {
+                            jfifFileString.append(jfifFileName + ", ");
+                            System.out.println(jfifFileName);
                         }
+
                         long endTime4 = System.nanoTime();
 
                         // get difference of two nanoTime values
                         long executionTime4 = (endTime4 - startTime4) / 1000000;
 
-                        LoggingService.executeLogging(" The function took "
-                                                        + executionTime4
-                                                        + " ms to execute.");
+                        // logging for the list of jfif files
+                        LoggingService.executeLogging("The list of png files is: "
+                                                    + jfifFileString
+                                                    + " The function took "
+                                                    + executionTime4
+                                                    + " ms to execute.");
                             break;
             }
         

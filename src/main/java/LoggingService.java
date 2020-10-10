@@ -18,7 +18,7 @@ public abstract class LoggingService {
     
         try {  
             
-            fh = new FileHandler("./src/test/MyLogFile.log", append);  
+            fh = new FileHandler("./src/test/MyLogFile.log");  
             logger.addHandler(fh);  
 
             // Print a brief summary of the LogRecord in a human readable format.

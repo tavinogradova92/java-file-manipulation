@@ -16,23 +16,25 @@ public abstract class TheListOfFiles {
             System.out.println("Here are all the files: ");
             System.out.println("");
 
-            for(int i = 0; i < contents.length; i++) {
-                System.out.println(contents[i]);
+            StringBuilder contentsString = new StringBuilder();
 
-                // Logging Service for the count 
-                LoggingService.executeLogging(contents[i]);
+            for(int i = 0; i < contents.length; i++) {
+                contentsString.append(contents[i] + ", ");
+                System.out.println(contents[i]);
             }
 
             long endTime = System.nanoTime();
 
             // get difference of two nanoTime values
             long executionTime = (endTime - startTime) / 1000000;
+            
+            // Logging Service for the count 
+            
+            LoggingService.executeLogging(contentsString
+                                        + "The function took "
+                                        + executionTime
+                                        + " ms to execute.");
 
-            LoggingService.executeLogging(" The function took "
-                                            + executionTime
-                                            + " ms to execute.");
-            
-            
             // The return to the main function
             System.out.println();
             int choiceentry = -1;
