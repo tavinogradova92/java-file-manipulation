@@ -12,13 +12,14 @@ public abstract class LoggingService {
     public static void executeLogging(String args) {
         
         Logger logger = Logger.getLogger("MyLog");  
+        
         // This block configure the logger with handler and formatter  
         boolean append = true;
         FileHandler fh;
     
         try {  
             
-            fh = new FileHandler("./src/test/MyLogFile.log");  
+            fh = new FileHandler("./src/test/MyLogFile.log", append);  
             logger.addHandler(fh);  
 
             // Print a brief summary of the LogRecord in a human readable format.

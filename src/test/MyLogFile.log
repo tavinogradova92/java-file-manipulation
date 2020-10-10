@@ -1,2 +1,14 @@
-Oct 10, 2020 7:40:03 PM main.java.LoggingService executeLogging
-INFO: 10/10/2020 19:40:03 The list of txt files is: Dracula.txt, The function took 19 ms to execute.
+Oct 10, 2020 7:41:58 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:41:58 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, The function took 66 ms to execute.
+Oct 10, 2020 7:53:13 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:53:13 Dracula.txt, Meme_1.jpeg, Meme_10.jfif, Meme_11.jfif, Meme_2.png, Meme_3.jpg, Meme_4.jpg, Meme_5.jpg, Meme_6.jpg, Meme_7.jpg, Meme_8.jfif, Meme_9.jfif, The function took 50 ms to execute.
+Oct 10, 2020 7:53:46 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:53:46 The list of txt files is: Dracula.txt, The function took 24 ms to execute.
+Oct 10, 2020 7:54:15 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:54:15 The name of the file is Dracula.txt The function took 1 ms to execute.
+Oct 10, 2020 7:54:16 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:54:16 The size of the file is 883160 bytes. The function took 0 ms to execute.
+Oct 10, 2020 7:54:16 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:54:16 Number of lines in the file are: 15973 The function took 142 ms to execute.
+Oct 10, 2020 7:54:20 PM main.java.LoggingService executeLogging
+INFO: 10/10/2020 19:54:20 The word "hi" appears in Dracula 0 times. The function took 3863 ms to execute.
