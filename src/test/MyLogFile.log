@@ -102,3 +102,5 @@
   <message>My first log</message>
 </record>
 </log>
+Oct 10, 2020 2:26:53 PM main.java.LoggingService executeLogging
+INFO: My first log
