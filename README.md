@@ -12,6 +12,7 @@
     counting occurences of this word in the text.  
 
 
+
 * Logging service used for each of the above mentioned manipulations to log the user friendly data about the date, time and duration of each function call in a separate logging file.
 
 * Manual work on the structure of the project to show the understanding of how such a project should be compiled without any IDE.
